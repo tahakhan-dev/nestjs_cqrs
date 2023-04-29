@@ -1,0 +1,29 @@
+============= I have to Implement all security headers======================
+
+
+1)  Content-Security-Policy (CSP): CSP allows you to specify which sources of content are allowed to be loaded by a web page,
+    helping to mitigate cross-site scripting (XSS) and code injection attacks.
+
+2)  X-Content-Type-Options: Setting this header to "nosniff" prevents browsers from interpreting files as a different MIME type,
+    reducing the risk of MIME type sniffing attacks.
+
+3)  X-Frame-Options: This header can prevent your web pages from being embedded within an iframe, reducing the risk of clickjacking
+    attacks. You can set it to "DENY" or specify specific origins that are allowed to frame your content.
+
+4)  X-XSS-Protection: Setting this header to "1; mode=block" enables the browser's built-in cross-site scripting (XSS) protection,
+    which can help detect and block XSS attacks.
+
+5)  Strict-Transport-Security (HSTS): This header enforces the use of HTTPS for secure communication with your application, 
+    reducing the risk of man-in-the-middle (MITM) attacks. It also helps prevent SSL-stripping attacks.
+
+6)  Referrer-Policy: This header controls the information sent in the "Referer" header when navigating to another page. Setting
+    it to "strict-origin-when-cross-origin" helps protect against information leakage and cross-origin attacks.
+
+7)  Feature-Policy: This header allows you to define which web features are allowed to be used on your site, helping
+    to mitigate risks associated with cross-origin attacks and unauthorized use of certain features.
+
+8)  Content-Disposition: This header allows you to specify how browsers should handle the content that is being downloaded 
+    from your site, reducing the risk of file download attacks.
+
+9)  Cache-Control: This header allows you to specify caching directives, which can help prevent sensitive data from being cached
+    by proxies or browsers.
